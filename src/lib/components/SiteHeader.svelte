@@ -70,16 +70,19 @@
 							>
 								<a
 									href="/submit"
+									onclick={() => (contributingOpen = false)}
 									class="block border-b border-gray-100 px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
 									>Submit a project</a
 								>
 								<a
 									href="/email"
+									onclick={() => (contributingOpen = false)}
 									class="block border-b border-gray-100 px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
 									>Email activation</a
 								>
 								<a
 									href="https://github.com/openbayan/openbayan.org/issues"
+									onclick={() => (contributingOpen = false)}
 									class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
 									target="_blank"
 									rel="noopener">Report an issue</a
@@ -124,18 +127,23 @@
 
 	<nav class={open ? 'block sm:hidden' : 'hidden'}>
 		<ul class="space-y-2 px-4 pb-4 text-sm">
-			<li><a class="block py-1" href="/mission">Mission</a></li>
-			<li><a class="block py-1" href="/vision">Vision</a></li>
-			<li><a class="block py-1" href="/directory">Directory</a></li>
+			<li><a class="block py-1" href="/mission" onclick={() => (open = false)}>Mission</a></li>
+			<li><a class="block py-1" href="/vision" onclick={() => (open = false)}>Vision</a></li>
+			<li><a class="block py-1" href="/directory" onclick={() => (open = false)}>Directory</a></li>
 			<li>
 				<div class="py-1">
 					<div class="mb-2 font-medium text-gray-900">Contributing</div>
 					<div class="space-y-1 pl-3">
-						<a class="block py-1 text-gray-600" href="/submit">Submit a project</a>
-						<a class="block py-1 text-gray-600" href="/email">Email activation</a>
+						<a class="block py-1 text-gray-600" href="/submit" onclick={() => (open = false)}
+							>Submit a project</a
+						>
+						<a class="block py-1 text-gray-600" href="/email" onclick={() => (open = false)}
+							>Email activation</a
+						>
 						<a
 							class="block py-1 text-gray-600"
 							href="https://github.com/openbayan/openbayan.org/issues"
+							onclick={() => (open = false)}
 							target="_blank"
 							rel="noopener">Report an issue</a
 						>
