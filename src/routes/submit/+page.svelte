@@ -137,7 +137,8 @@
 				>
 			</p>
 			<div class="overflow-x-auto">
-				<pre class="rounded border border-green-200 bg-white p-4 text-sm text-gray-800"><code
+				<pre
+					class="overflow-x-auto rounded border border-green-200 bg-white p-4 text-sm text-gray-800"><code
 						>{`---
 title: "Your Project Name"
 summary: "Brief one-sentence description of what your project does"
