@@ -80,6 +80,80 @@
 			</ul>
 		</div>
 
+		<h2 class="mb-6 text-2xl font-bold text-gray-900">Setting up with an email client</h2>
+
+		<div class="mb-8 border border-blue-200 bg-blue-50 p-6">
+			<p class="mb-4 text-blue-800">
+				<strong>Server Configuration:</strong> Use these settings to configure your email client (Outlook,
+				Thunderbird, Apple Mail, etc.) with your OpenBayan email account.
+			</p>
+		</div>
+
+		<div class="mb-12 grid gap-6 md:grid-cols-2">
+			<div class="border border-gray-200 bg-gray-50 p-6">
+				<h3 class="mb-4 text-lg font-semibold text-gray-900">Incoming Mail (IMAP/POP3)</h3>
+				<div class="space-y-3 text-sm">
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">IMAP Server:</span>
+						<span class="font-mono text-gray-900">mail.openbayan.org</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">IMAP SSL Port:</span>
+						<span class="font-mono text-gray-900">993</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">IMAP Non-SSL Port:</span>
+						<span class="font-mono text-gray-900">143</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">POP3 SSL Port:</span>
+						<span class="font-mono text-gray-900">995</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">POP3 Non-SSL Port:</span>
+						<span class="font-mono text-gray-900">110</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="border border-gray-200 bg-gray-50 p-6">
+				<h3 class="mb-4 text-lg font-semibold text-gray-900">Outgoing Mail (SMTP)</h3>
+				<div class="space-y-3 text-sm">
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">SMTP Server:</span>
+						<span class="font-mono text-gray-900">mail.openbayan.org</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">SMTP SSL Port:</span>
+						<span class="font-mono text-gray-900">465</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">SMTP STARTTLS Port:</span>
+						<span class="font-mono text-gray-900">587</span>
+					</div>
+					<div class="flex justify-between">
+						<span class="font-medium text-gray-700">SMTP Non-SSL Port:</span>
+						<span class="font-mono text-gray-900">25</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mb-12 border border-green-200 bg-green-50 p-6">
+			<h3 class="mb-3 text-lg font-semibold text-green-900">Recommended Settings</h3>
+			<ul class="list-inside list-disc space-y-2 text-green-800">
+				<li><strong>Use IMAP instead of POP3</strong> for better synchronization across devices</li>
+				<li>
+					<strong>Enable SSL/TLS encryption</strong> for secure connections (ports 993 for IMAP, 465
+					for SMTP)
+				</li>
+				<li>
+					<strong>Use STARTTLS on port 587</strong> if your client doesn't support SSL on port 465
+				</li>
+				<li><strong>Authentication required</strong> for both incoming and outgoing mail</li>
+			</ul>
+		</div>
+
 		<h2 class="mb-8 text-2xl font-bold text-gray-900">What activation provides</h2>
 
 		<div class="mb-12 grid gap-6 md:grid-cols-2">
