@@ -40,9 +40,9 @@
 
 			<nav class="hidden sm:block">
 				<ul class="flex items-center gap-6 text-sm">
+					<li><a class="hover:underline" href="/directory">Directory</a></li>
 					<li><a class="hover:underline" href="/mission">Mission</a></li>
 					<li><a class="hover:underline" href="/vision">Vision</a></li>
-					<li><a class="hover:underline" href="/directory">Directory</a></li>
 					<li class="relative" bind:this={contributingDropdown}>
 						<button
 							class="flex items-center gap-1 hover:underline"
@@ -68,12 +68,6 @@
 							<div
 								class="absolute top-full left-0 z-50 mt-1 min-w-48 border border-gray-300 bg-white py-1 shadow-lg"
 							>
-								<a
-									href="/submit"
-									onclick={() => (contributingOpen = false)}
-									class="block border-b border-gray-100 px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
-									>Submit a project</a
-								>
 								<a
 									href="/email"
 									onclick={() => (contributingOpen = false)}
@@ -112,6 +106,13 @@
 					<path d="m21 21-4.35-4.35"></path>
 				</svg>
 			</a>
+			<a
+				href="/submit"
+				class="inline-flex items-center justify-center bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:ring-2 focus:ring-[--color-brand] focus:outline-none"
+			>
+				<span class="sm:hidden">Submit</span>
+				<span class="hidden sm:inline">Submit a project</span>
+			</a>
 
 			<button
 				class="rounded-[--radius-sm] border p-2 sm:hidden"
@@ -127,16 +128,13 @@
 
 	<nav class={open ? 'block sm:hidden' : 'hidden'}>
 		<ul class="space-y-2 px-4 pb-4 text-sm">
+			<li><a class="block py-1" href="/directory" onclick={() => (open = false)}>Directory</a></li>
 			<li><a class="block py-1" href="/mission" onclick={() => (open = false)}>Mission</a></li>
 			<li><a class="block py-1" href="/vision" onclick={() => (open = false)}>Vision</a></li>
-			<li><a class="block py-1" href="/directory" onclick={() => (open = false)}>Directory</a></li>
 			<li>
 				<div class="py-1">
 					<div class="mb-2 font-medium text-gray-900">Contributing</div>
 					<div class="space-y-1 pl-3">
-						<a class="block py-1 text-gray-600" href="/submit" onclick={() => (open = false)}
-							>Submit a project</a
-						>
 						<a class="block py-1 text-gray-600" href="/email" onclick={() => (open = false)}
 							>Email activation</a
 						>

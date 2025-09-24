@@ -60,7 +60,12 @@
 			class="mt-10 flex flex-col items-start justify-between gap-3 border-t border-gray-600 pt-4 sm:flex-row sm:items-center"
 		>
 			<p class="text-gray-400">Content licensed MIT/CC-BY where applicable.</p>
-			<p class="text-gray-400">&copy; {new Date().getFullYear()} OpenBayan</p>
+			<p class="text-gray-400">
+				&copy; {new Date().getFullYear()} OpenBayan · by
+				<a class="underline hover:text-white" href="https://bettergov.ph" rel="noopener"
+					>BetterGov.ph</a
+				>
+			</p>
 		</div>
 	</div>
 </footer>
